@@ -10,7 +10,8 @@ app.use(cors())
 app.use(express.json())
 
 // MongoDB Connect (Local)
-mongoose.connect("mongodb://127.0.0.1:27017/taskDB")
+mongoose.connect("mongodb+srv://ravi:ravi123@cluster0.xxxxx.mongodb.net/taskDB?retryWrites=true&w=majority")
+
   .then(() => console.log("✅ MongoDB Connected"))
   .catch(err => console.log("❌ Error connecting to DB:", err))
 
