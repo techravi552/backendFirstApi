@@ -12,8 +12,9 @@ app.use(express.json())
 // MongoDB Connect (Local)
 // mongoose.connect("mongodb://127.0.0.1:27017/taskDB")
 // mongodb+srv://ravi:<db_password>@cluster0.wzx1cjw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-// mongoose.connect("mongodb+srv://ravi:ravi123@cluster0.xxxxx.mongodb.net/taskDB?retryWrites=true&w=majority")
-mongoose.connect("mongodb+srv://ravi:ravi123@cluster0.wzx1cjw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+// mongoose.connect("mongodb+srv://ravi:ravi123@cluster0.wzx1cjw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("mongodb+srv://ravi:ravi123@cluster0.wzx1cjw.mongodb.net/taskDB?retryWrites=true&w=majority&appName=Cluster0")
+
 
   .then(() => console.log("✅ MongoDB Connected"))
   .catch(err => console.log("❌ Error connecting to DB:", err))
